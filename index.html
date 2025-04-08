@@ -30,20 +30,17 @@
   <a-scene
     vr-mode-ui="enabled: false;"
     renderer="logarithmicDepthBuffer: true; precision: medium;"
-    embedded
-    arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
+    embedded arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
   >
     <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
   <a-nft
-    type="nft"
-    url="https://nonzi19.github.io/BusinessCard"
-    smooth="true"
+    type="nft"url="./BusinessCard/nft/BusinessCard" smooth="true"
     smoothCount="10"
     smoothTolerance=".01"
     smoothThreshold="5"
   >
   <a-entity
-    gltf-model="https://nonzi19.github.io/BusinessCard/kawashaki_ninja_h2.glb"
+    gltf-model="./BusinessCard/kawashaki_ninja_h2.glb"
     scale="0.1 0.1 0.1" 
     position="0 0.5 0"
 
