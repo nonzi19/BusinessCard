@@ -1,5 +1,6 @@
 <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
 <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+<script> window.addEventListener('arjs-nft-loaded', () => {document.querySelector('.arjs-loader').style.display = 'none';}); </script>
 
 <style>
   .arjs-loader {
@@ -22,6 +23,8 @@
   }
 </style>
 
+
+
 <body style="margin: 0px; overflow: hidden;">
 <div class="arjs-loader">
   <div>Loading, please wait...</div>
@@ -38,7 +41,7 @@
           smoothThreshold="5"
   >
     <a-entity
-            gltf-model="./BusinessCard/kawashaki_ninja_h2.glb"
+            gltf-model="./BusinessCard/models/kawashaki_ninja_h2.glb"
             scale="0.1 0.1 0.1"
             position="0 0.5 0"
     ></a-entity>
@@ -47,3 +50,9 @@
   <a-entity camera></a-entity>
 </a-scene>
 </body>
+
+<noscript>
+  <p style="color: white; background: black; text-align: center;">
+    JavaScript is required to view this AR experience.
+  </p>
+</noscript>
